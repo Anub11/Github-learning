@@ -2,7 +2,11 @@
 hello
 changes from branch 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 chganges from branch 3
+=======
+changes from branch2
+>>>>>>> c5ea872... commit from branch2
 
 =======
 changes from master
