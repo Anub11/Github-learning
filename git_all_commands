@@ -1,0 +1,670 @@
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github
+$ git init
+Initialized empty Git repository in F:/D-Drive all Files/Devpos_learning/Github/.git/
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ touch file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git diff
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ vi file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git diff
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git add file1
+warning: LF will be replaced by CRLF in file1.
+The file will have its original line endings in your working directory
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git commit -m "first commit"
+[master (root-commit) 26b07b1] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote -v
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote add "git@github.com:Anub11/Github-learning.git"
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote add "git@github.com:Anub11/Github-learning.git"
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote add git@github.com:Anub11/Github-learning.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote add origine git@github.com:Anub11/Github-learning.git
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git remote -v
+origine git@github.com:Anub11/Github-learning.git (fetch)
+origine git@github.com:Anub11/Github-learning.git (push)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git branch "branch1"
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git checkout -b branch1
+fatal: A branch named 'branch1' already exists.
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git branch
+* branch1
+  master
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ vi file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git add .
+warning: LF will be replaced by CRLF in file1.
+The file will have its original line endings in your working directory
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git commit -m "commit from branch1"
+[branch1 bef8e5f] commit from branch1
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git log
+commit bef8e5f2697acb0d5025d4e7ef2c711b63c59e4e (HEAD -> branch1)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8 (master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch1)
+$ git checkout master
+Switched to branch 'master'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log branch1
+commit bef8e5f2697acb0d5025d4e7ef2c711b63c59e4e (branch1)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git cherry-pick bef8e5f2697acb0d5025d4e7ef2c711b63c59e4e
+[master 1d6e917] commit from branch1
+ Date: Thu Jul 6 22:12:44 2023 +0530
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log main
+fatal: ambiguous argument 'main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log master
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch2)
+$ vi file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch2)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch2)
+$ git commit -m "commit from branch2"
+[branch2 c5ea872] commit from branch2
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch2)
+$ git log
+commit c5ea872a9b50be2a276a2068046b51b883a2482b (HEAD -> branch2)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:16:04 2023 +0530
+
+    commit from branch2
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88 (master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch2)
+$ git checkout master
+Switched to branch 'master'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git checkout -b branch3
+Switched to a new branch 'branch3'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch3)
+$ vi file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch3)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch3)
+$ git commit -m "commit from branch3"
+[branch3 32bd1b6] commit from branch3
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch3)
+$ git log
+commit 32bd1b629aa9288b266b91b41e98495a5e5a5a24 (HEAD -> branch3)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:17:56 2023 +0530
+
+    commit from branch3
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88 (master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (branch3)
+$ git checkout master
+Switched to branch 'master'
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ vi file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git commit -m "commit from master"
+[master e482993] commit from master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log
+commit e4829934ca24660dc4ea24b045fddd0bb5dcfd55 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:19:11 2023 +0530
+
+    commit from master
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git marger barnch2
+git: 'marger' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git merge barnch2
+merge: barnch2 - not something we can merge
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git merge branch2
+Auto-merging file1
+CONFLICT (content): Merge conflict in file1
+Automatic merge failed; fix conflicts and then commit the result.
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|MERGING)
+$ git log
+commit e4829934ca24660dc4ea24b045fddd0bb5dcfd55 (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:19:11 2023 +0530
+
+    commit from master
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|MERGING)
+$ git merge branch2
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|MERGING)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|MERGING)
+$ git commit -m "commit from master again"
+[master 28c2f4f] commit from master again
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git merge branch2
+Already up to date.
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log
+commit 28c2f4fe610258c4dc4043f0145b6cfe3408a9ef (HEAD -> master)
+Merge: e482993 c5ea872
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:22:00 2023 +0530
+
+    commit from master again
+
+commit e4829934ca24660dc4ea24b045fddd0bb5dcfd55
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:19:11 2023 +0530
+
+    commit from master
+
+commit c5ea872a9b50be2a276a2068046b51b883a2482b (branch2)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:16:04 2023 +0530
+
+    commit from branch2
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git rebase branch3
+error: could not apply e482993... commit from master
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply e482993... commit from master
+Auto-merging file1
+CONFLICT (content): Merge conflict in file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git rebase branch3
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git log
+commit 32bd1b629aa9288b266b91b41e98495a5e5a5a24 (HEAD, branch3)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:17:56 2023 +0530
+
+    commit from branch3
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git rebase branch3
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git log
+commit 32bd1b629aa9288b266b91b41e98495a5e5a5a24 (HEAD, branch3)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:17:56 2023 +0530
+
+    commit from branch3
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git rebase --continue branch3
+usage: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] [<upstream> [<branch>]]
+   or: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]
+   or: git rebase --continue | --abort | --skip | --edit-todo
+
+    --onto <revision>     rebase onto given branch instead of upstream
+    --keep-base           use the merge-base of upstream and branch as the current base
+    --no-verify           allow pre-rebase hook to run
+    -q, --quiet           be quiet. implies --no-stat
+    -v, --verbose         display a diffstat of what changed upstream
+    -n, --no-stat         do not show diffstat of what changed upstream
+    --signoff             add a Signed-off-by: line to each commit
+    --ignore-whitespace   passed to 'git am'
+    --committer-date-is-author-date
+                          passed to 'git am'
+    --ignore-date         passed to 'git am'
+    -C <n>                passed to 'git apply'
+    --whitespace <action>
+                          passed to 'git apply'
+    -f, --force-rebase    cherry-pick all commits, even if unchanged
+    --no-ff               cherry-pick all commits, even if unchanged
+    --continue            continue
+    --skip                skip current patch and continue
+    --abort               abort and check out the original branch
+    --quit                abort but keep HEAD where it is
+    --edit-todo           edit the todo list during an interactive rebase
+    --show-current-patch  show the patch file being applied or merged
+    --apply               use apply strategies to rebase
+    -m, --merge           use merging strategies to rebase
+    -i, --interactive     let the user edit the list of commits to rebase
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --empty <{drop,keep,ask}>
+                          how to handle commits that become empty
+    --autosquash          move commits that begin with squash!/fixup! under -i
+    -S, --gpg-sign[=<key-id>]
+                          GPG-sign commits
+    --autostash           automatically stash/stash pop before and after
+    -x, --exec <exec>     add exec lines after each commit of the editable list
+    -r, --rebase-merges[=<mode>]
+                          try to rebase merges instead of skipping them
+    --fork-point          use 'merge-base --fork-point' to refine upstream
+    -s, --strategy <strategy>
+                          use the given merge strategy
+    -X, --strategy-option <option>
+                          pass the argument through to the merge strategy
+    --root                rebase all reachable commits up to the root(s)
+    --reschedule-failed-exec
+                          automatically re-schedule any `exec` that fails
+    --reapply-cherry-picks
+                          apply all changes, even those already present upstream
+
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 1/2)
+$ git rebase --continue
+[detached HEAD 37e9f1b] commit from master
+ 1 file changed, 4 insertions(+)
+error: could not apply c5ea872... commit from branch2
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply c5ea872... commit from branch2
+Auto-merging file1
+CONFLICT (content): Merge conflict in file1
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 2/2)
+$ git log
+commit 37e9f1be53801c52a6636d760f969fc3eedfa7c4 (HEAD)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:19:11 2023 +0530
+
+    commit from master
+
+commit 32bd1b629aa9288b266b91b41e98495a5e5a5a24 (branch3)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:17:56 2023 +0530
+
+    commit from branch3
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 2/2)
+$ git rebase --continue
+file1: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 2/2)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 2/2)
+$ git add *
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master|REBASE 2/2)
+$ git rebase --continue
+[detached HEAD b3a8d92] commit from branch2
+ 1 file changed, 4 insertions(+)
+Successfully rebased and updated refs/heads/master.
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ git log
+commit b3a8d9225f186f8a25526304860ba7330c41fb5a (HEAD -> master)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:16:04 2023 +0530
+
+    commit from branch2
+
+commit 37e9f1be53801c52a6636d760f969fc3eedfa7c4
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:19:11 2023 +0530
+
+    commit from master
+
+commit 32bd1b629aa9288b266b91b41e98495a5e5a5a24 (branch3)
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:17:56 2023 +0530
+
+    commit from branch3
+
+commit 1d6e9176d73876df24a789ed6235aac29af8fb88
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:12:44 2023 +0530
+
+    commit from branch1
+
+commit 26b07b1a1ade9e87fc325cc41644087c94a12df8
+Author: Anubhav Bej <bej.anubhav@gmail.com>
+Date:   Thu Jul 6 22:02:07 2023 +0530
+
+    first commit
+
+ADMIN@DESKTOP-KFTM2CE MINGW64 /f/D-Drive all Files/Devpos_learning/Github (master)
+$ vi file1
+
