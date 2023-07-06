@@ -1,5 +1,9 @@
 
 hello
 changes from branch 1
+<<<<<<< HEAD
 chganges from branch 3
 
+=======
+changes from master
+>>>>>>> e482993... commit from master
